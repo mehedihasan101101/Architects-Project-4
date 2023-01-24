@@ -1,0 +1,395 @@
+/* -------------- Common css ----------------*/
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Work Sans', sans-serif;
+
+}
+
+body {}
+
+section {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* ------------------------------header css start---------------------------- */
+header {
+    width: 100%;
+    background: rgba(255, 144, 14, 0.1);
+}
+
+/*...... nav css start....... */
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40PX;
+}
+
+nav div h3 {
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.menu-items ul {
+    display: flex;
+    gap: 40px;
+}
+
+.menu-items li {
+    list-style: none;
+
+}
+
+.menu-items a {
+    color: #424242;
+    text-decoration: none;
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+
+}
+
+/*...... nav css finish....... */
+/*...... Header Resources css Start....... */
+
+.brif-about-brand {
+    width: 650px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+.brif-about-brand h1 {
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 44px;
+}
+
+.brif-about-brand P {
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    color: #727272;
+    padding: 20px 0px;
+}
+
+.btn1 {
+    width: 120px;
+    height: 44px;
+    display: block;
+    margin: 0 auto;
+    border: none;
+    background-color: #FF900E;
+    color: white;
+    border-radius: 5px;
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 600;
+}
+
+header img {
+    margin: 20px 0px;
+}
+
+/*...... Header Resources css finish....... */
+/*...... media query for header start....... */
+@media only screen and (max-width:576px) {
+    nav {
+        flex-direction: column;
+        padding-top: 0PX;
+
+    }
+
+    section {
+        width: 100%;
+        margin: 0 auto;
+
+    }
+
+    .brif-about-brand {
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .brif-about-brand h1 {
+        font-size: 24px;
+    }
+
+    header img {
+        display: block;
+        padding: 10px 0px;
+        width: 95%;
+        margin: 0 auto;
+
+    }
+}
+
+/*...... media query for header finish....... */
+
+/* ------------------------------header css finish---------------------------- */
+
+/* ------------------------------main css start---------------------------- */
+/*...... section 1 css start...... */
+.section1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 0px 50px;
+    width: 1100px;
+}
+
+.teams {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 5px;
+    grid-column-gap: 5px;
+}
+
+.teams img {
+    width: 242px;
+    height: 242px;
+    border-radius: 5px;
+}
+
+.features {
+    width: 443px;
+}
+
+.features p {
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    color: #727272;
+}
+
+.btn2 {
+    width: 120px;
+    height: 44px;
+    border: none;
+    background-color: #FF900E;
+    color: white;
+    border-radius: 5px;
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.features h3 {
+    color: #727272;
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 45px;
+}
+
+/*...... section 1 media query...... */
+@media only screen and (max-width:576px) {
+    .section1 {
+        flex-direction: column;
+        width: 100%;
+        padding: 0px 0px;
+
+    }
+
+    .teams img {
+        width: 100%;
+        height: 170px;
+    }
+
+    .features h3 {
+        font-size: 25px;
+        width: 100%;
+    }
+
+    .features {
+        width: 100%;
+        padding: ;
+    }
+}
+
+/*...... section 2 css start...... */
+.section2 {
+    display: flex;
+    gap: 108px;
+    justify-content: space-between;
+}
+
+.line {
+    border-left: 3px solid #FF900E;
+
+}
+
+.line h1 {
+    font-size: 40px;
+    padding-left: 15px;
+}
+
+
+.architect img {
+    width: 550px;
+    height: 750px;
+    z-index: 0;
+}
+
+.architect div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    width: 170px;
+    height: 100px;
+    background-color: #FF900E;
+    justify-content: center;
+    z-index: 1;
+    margin-top: -57px;
+    position: absolute;
+    border-radius: 5px;
+    margin-left: -58px;
+    color: #ffffffff
+}
+
+.architect div h2 {
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+}
+
+.features-details p {
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 400;
+    color: #727272;
+    font-size: 12px;
+    width: 482px;
+    padding: 20px 0px;
+}
+
+.details p {
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 400;
+    color: #727272;
+    font-size: 12px;
+    width: 400px;
+    padding: 20px 0px;
+}
+
+.details {
+    width: 482px;
+    padding: 20px;
+    border-radius: 5px;
+
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    margin-top: 10px;
+}
+
+/*...... section 3 css start...... */
+.section3 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.section3 p {
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    color: #727272;
+    width: 412px;
+    margin-top: 20px;
+    padding-bottom: 50px;
+}
+
+.section3>h3 {
+    font-size: 40px;
+}
+
+.achievement {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 50px;
+}
+
+.achievement div {
+    border: 1px solid #FF900E;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 600;
+    border-radius: 5px;
+
+}
+
+.achievement div h3 {
+    font-size: 25px;
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 600;
+    padding: 5px;
+
+
+}
+
+.achievement div h4 {
+    font-size: 12px;
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 600;
+    color: #727272;
+}
+
+/*...... section 4 css start...... */
+.section4 h1 {
+    text-align: center;
+    font-size: 40px;
+}
+
+.section4 p {
+    text-align: center;
+    font-size: 12px;
+    color: #727272;
+    padding: 10px 398px;
+}
+
+.section4 div img {
+    width: 115px;
+    height: 35px;
+    filter: grayscale(100%);
+    padding: 20px;
+}
+
+.section4 div {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.copyright {
+    background-color: #FFF4E7;
+    border-radius: 5px;
+    padding: 15px 0px;
+    margin: 50px 0px;
+}
+
+.copyright p {
+    text-align: center;
+}
